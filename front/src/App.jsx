@@ -12,9 +12,9 @@ function App() {
   const city = 'buenos aires';
 
   const bringData = async () => {
-    const response = await axios(`http://localhost:3001/${city}`);
+    const response = await axios(`weatherapp-production-2bb8.up.railway.app/${city}`);
     setHomeWeather(response.data);
-    const responseExt = await axios(`http://localhost:3001/extendido/${city}`);
+    const responseExt = await axios(`weatherapp-production-2bb8.up.railway.app/extendido/${city}`);
     setHomeExt(responseExt.data);
   }
 

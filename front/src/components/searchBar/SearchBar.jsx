@@ -13,9 +13,9 @@ const SearchBar = ({setCurrent, setForecast}) => {
 
   const handleSearch = async () => {
     try {
-      const currentWeather = await axios.get(`http://localhost:3001/${city}`);
+      const currentWeather = await axios.get(`weatherapp-production-2bb8.up.railway.app/${city}`);
       setCurrent(currentWeather.data);
-      const foreinWeather = await axios.get(`http://localhost:3001/extendido/${city}`);
+      const foreinWeather = await axios.get(`weatherapp-production-2bb8.up.railway.app/extendido/${city}`);
       setForecast(foreinWeather.data)
     } catch (error) {
       console.error(error);
