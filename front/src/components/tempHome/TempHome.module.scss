@@ -1,0 +1,388 @@
+.container  {
+    width: 100%;
+    height: auto;
+}
+
+
+.tempBox {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.ubicacion {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+    position: relative;
+    top: 40px;
+}
+
+.city {
+    font-size: 42px;
+    font-weight: 500;
+    color: white;
+    word-spacing: -3px;
+    letter-spacing: -1px;
+    margin: 0;
+    padding: 0;
+}
+
+.cityIcon {
+    font-size: 18px;
+    margin-right: 8px;
+    color: yellow;
+}
+
+.fecha {
+    font-size: 22px;
+    font-weight: 200;
+    color: #ffffff;
+    word-spacing: -2px;
+    letter-spacing: -.7px;
+    margin-left: 30px;
+}
+
+.fechaIcon {
+    font-size: 18px;
+    margin-right: 10px;
+    color: yellow;
+
+}
+
+.informacion {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 60px;
+    padding: 0px 80px;
+}
+
+.info1{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 1.5px;
+}
+
+.actual {
+    font-size: 18px;
+    color: #a0a0a0;
+    position: relative;
+    top: 40px;
+}
+
+.info1 img {
+    position: relative;
+    top: 20px;
+}
+
+.info1 p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 0;
+    position: relative;
+    top: -5.5px;
+}
+
+.temperatura {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin: 0;
+    margin-left: 100px;
+    padding: 0;
+}
+
+
+.temperature {
+    font-size: 80px;
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    color: yellow;
+    letter-spacing: -6px;
+    filter: drop-shadow(0px 0px 10px #000);
+    text-align: left;
+    position: relative;
+    top: 24px;
+}
+
+.temperature span {
+    font-size: 44px;
+    font-weight: 400;
+    color: #a0a0a0;
+}
+
+.termica {
+    font-size: 20px;
+    color: #a0a0a0;
+    position: relative;
+    top: 9px;
+}
+
+.termica span {
+    color: #fff;
+    font-weight: 300;
+}
+
+.detalles {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0px;
+    margin-left: 100px;
+    position: relative;
+    top: -6px;
+}
+
+.detalles p {
+    color: #cecece;
+    font-size: 22px;
+    font-weight: 200;
+    text-align: left;
+    margin: 0;
+    padding: 4px 0px;
+}
+
+.deta {
+   color: yellow;
+   font-size: 22px;
+   font-weight: bolder;
+}
+
+
+
+
+
+
+
+@media (min-width: 630px) and (max-width: 960px) {
+    
+    .ubicacion {
+        flex-wrap: nowrap;
+        margin-left: 30px;
+        position: relative;
+        top: 40px;
+    }
+    
+    .city {
+        font-size: 32px;
+        font-weight: 500;
+        color: white;
+        word-spacing: -3px;
+        letter-spacing: -1px;
+    }
+    
+    .informacion {
+        padding: 0px 30px;
+    }    
+    
+    .info1 p {
+        font-size: 16px;
+    }
+    
+    .temperatura {
+        margin-left: 60px;
+    }
+    
+    .actual {
+        font-size: 16px;
+    }
+    
+    .temperature {
+        font-size: 70px;
+    }
+    
+    .termica {
+        font-size: 16px;
+    }
+    
+    .detalles {
+        margin-left: 60px;
+        top: -2px;
+    }
+    
+    .detalles p {
+        font-size: 16px;
+    }
+    
+    .deta {
+       color: yellow;
+       font-size: 16px;
+       font-weight: bolder;
+    }
+  }
+
+
+
+
+  @media (max-width: 629px) {
+    
+    .ubicacion {
+        margin-left: 20px;
+        margin-top: 30px;
+        position: relative;
+        top: 0px;
+    }
+    
+    .city {
+        font-size: 24px;
+        font-weight: 500;
+        color: white;
+        word-spacing: inherit;
+        letter-spacing: -.5px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cityIcon {
+        font-size: 14px;
+        margin-right: 8px;
+        color: yellow;
+    }
+    
+    .fecha {
+        font-size: 16px;
+        font-weight: 200;
+        color: #ffffff;
+        word-spacing: inherit;
+        letter-spacing: -.5px;
+        margin-left: 10px;
+    }
+    
+    .fechaIcon {
+        font-size: 12px;
+        margin-right: 10px;
+        color: yellow;
+    
+    }
+    
+    .informacion {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        margin-top: 0px;
+        padding: 0px 20px;
+    }
+    
+    .info1{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 1.5px;
+    }
+    
+    
+    .info1 img {
+        position: relative;
+        top: 20px;
+    }
+    
+    .info1 p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 0;
+        position: relative;
+        top: -5.5px;
+    }
+    
+    .temperatura {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        margin: 0;
+        margin-left: 30px;
+        padding: 0;
+    }
+    
+    .actual {
+        font-size: 14px;
+        color: #a0a0a0;
+        position: relative;
+        top: 40px;
+    }
+    
+    .temperature {
+        font-size: 60px;
+        font-weight: 100;
+        padding: 0;
+        margin: 0;
+        color: yellow;
+        letter-spacing: -6px;
+        filter: drop-shadow(0px 0px 10px #000);
+        text-align: left;
+        position: relative;
+        top: 24px;
+    }
+    
+    .temperature span {
+        font-size: 24px;
+        font-weight: 400;
+        color: #a0a0a0;
+    }
+    
+    .termica {
+        font-size: 16px;
+        color: #a0a0a0;
+        position: relative;
+        top: 9px;
+    }
+    
+    .termica span {
+        color: #fff;
+        font-weight: 300;
+    }
+    
+    .detalles {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: start;
+        gap: 0px;
+        margin-left: 0px;
+        position: relative;
+        top: -6px;
+    }
+    
+    .detalles p {
+        color: #cecece;
+        font-size: 14px;
+        font-weight: 200;
+        text-align: center;
+        margin: 0px 10px;
+        margin-top: 30px;
+        padding: 4px 0px;
+    }
+    
+    .deta {
+       color: yellow;
+       font-size: 14px;
+       font-weight: bolder;
+    }
+    
+  }
