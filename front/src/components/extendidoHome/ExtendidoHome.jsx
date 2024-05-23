@@ -1,12 +1,13 @@
 import style from './ExtendidoHome.module.scss'
 
 function ExtendidoHome({ext}) {
-    const today = new Date().toISOString().split('T')[0];
+   const today = new Date().toISOString().split('T')[0];
     const todayForecast = ext?.list?.filter(item => item.dt_txt.startsWith(today));
     const futureForecast = ext?.list?.filter(item => {
         const forecastDate = item.dt_txt.split(' ')[0];
         return forecastDate > today;
       });
+
     
       const groupedByDay = futureForecast?.reduce((acc, item) => {
         const date = item.dt_txt.split(' ')[0]; 
@@ -41,10 +42,12 @@ function ExtendidoHome({ext}) {
         const dias = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
         const nombreDia = dias[fechaObj.getDay()];
         const dia = fechaObj.getDate().toString().padStart(2, '0');
-        const mes = (fechaObj.getMonth() + 1).toString().padStart(2, '0'); // Los meses en JavaScript van de 0 a 11
+        const mes = (fechaObj.getMonth() + 1).toString().padStart(2, '0'); 
         return `${nombreDia} ${dia}`;
       }
         
+
+
     return (
     <div className={style.container}>
                 <div className={style.boxContainer}>

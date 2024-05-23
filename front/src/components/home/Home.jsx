@@ -6,7 +6,6 @@ import ForecastHome from '../forecastHome/ForecastHome';
 
 function Home({temp, ext}) {
     const [filtro, setFiltro] = useState('dias'); 
-    
     const today = new Date().toISOString().split('T')[0];
     const todayForecast = ext?.list?.filter(item => item.dt_txt.startsWith(today));
     
@@ -21,14 +20,14 @@ function Home({temp, ext}) {
             temp ?
             <div className={style.subcontainer}>
                         <div className={style.current}>
-                            <TempHome temp={temp} todayForecast={todayForecast}/>
+                            <TempHome temp={temp} />
                         </div>
                         <div className={style.extendido}>
                             <button onClick={() => cambiarFiltro('dias')}>Proximos días</button>
                             <button onClick={() => cambiarFiltro('horas')}>Proximas horas</button>
                             {filtro === 'dias' ? <ExtendidoHome ext={ext} /> : <ForecastHome forecast={todayForecast}/>}
                         </div>
-                </div>    
+            </div>    
             : null
         }
     </div>

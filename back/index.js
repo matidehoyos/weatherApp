@@ -1,5 +1,5 @@
 const server = require("./server.js");
-const router = require("./src/routes/index.js")
+const router = require("./routes")
 const port = process.env.PORT || 3001; 
 
 

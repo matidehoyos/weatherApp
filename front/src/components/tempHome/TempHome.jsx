@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaRegClock } from 'react-icons/fa';
 import ForecastHome from '../forecastHome/ForecastHome';
 
 
-function TempHome({temp, todayForecast}) {
+function TempHome({temp}) {
 
   let iconUrl;
   if (temp && temp.weather && temp.weather[0]) {

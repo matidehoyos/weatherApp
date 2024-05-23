@@ -6,7 +6,7 @@ import axios from 'axios';
 
 function App() {
   const [currentWeather, setCurrent] = useState(null);
-  const [forecastWeather, setForecast] = useState({});
+  const [forecastWeather, setForecast] = useState(null);
   const [homeWeather, setHomeWeather] = useState(null);
   const [homeExt, setHomeExt] = useState(null);
   const city = 'buenos aires';
@@ -22,12 +22,13 @@ function App() {
     bringData();
   }, []);
 
+
   return (
     <>
       <NavBar setCurrent={setCurrent} setForecast={setForecast} />
       {
-        currentWeather ?
-        <Home temp={currentWeather} ext={forecastWeather}/>
+        currentWeather 
+        ? <Home temp={currentWeather} ext={forecastWeather}/>
         : <Home temp={homeWeather} ext={homeExt}/>
       }
     </>

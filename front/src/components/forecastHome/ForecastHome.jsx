@@ -3,11 +3,11 @@ import style from './ForecastHome.module.scss'
 
 function ForecastHome({forecast}) {
 
-
   return (
     <div className={style.container}>
         <div className={style.boxContainer}>
-            {forecast?.map((day, index) => {
+            {forecast.length ?
+            forecast?.map((day, index) => {
                         const time = day.dt_txt.split(" ")[1];
                         const hour = time.split(":")[0]; 
                             return(
@@ -18,7 +18,9 @@ function ForecastHome({forecast}) {
                                     <p>Nubosidad: <span>{day.clouds.all}%</span></p>
                                 </div>
                             );
-                        })}
+                        })
+                 : <p>Pronostico disponible hasta las 18hs</p>
+                }
         </div>
     </div>
   )
