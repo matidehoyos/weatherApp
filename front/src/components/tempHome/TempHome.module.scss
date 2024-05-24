@@ -360,10 +360,7 @@
         letter-spacing: -4px;
         filter: drop-shadow(0px 0px 10px #000);
         text-align: left;
-        position: relative;
-        top: 10px;
-        left: -3.5px;
-        
+        position: inherit;
     }
     
     .temperature span {
@@ -392,12 +389,11 @@
         justify-content: start;
         align-items: center;
         gap: 0px;
-        padding: 20px;
-        margin: 20px 0px;
+        padding: 20px 20px;
         margin-left: 0px;
         position: inherit;
         overflow-x: scroll;
-        background-color: rgba(255, 255, 0, 0.035);
+        background-color: transparent;
     }
 
     .detalles::-webkit-scrollbar {
@@ -406,7 +402,7 @@
     
     .detalles p {
         color: #a0a0a0;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 200;
         text-align: left;
         margin: 0;
@@ -416,7 +412,7 @@
     
     .deta {
        color: #fff;
-       font-size: 18px;
+       font-size: 16px;
        font-weight: lighter;
     }
     
