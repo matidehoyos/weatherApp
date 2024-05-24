@@ -238,22 +238,24 @@
 
 
   @media (max-width: 629px) {
-
+    .container {
+        padding-bottom: 12px;
+    }
     
     .ubicacion {
         flex-direction: column;
         margin-left: 20px;
-        margin-top: 25px;
+        margin-top: 12px;
         position: relative;
         top: 0px;
     }
     
     .city {
         font-size: 28px;
-        font-weight: 700;
+        font-weight: 400;
         color: white;
         word-spacing: inherit;
-        letter-spacing: -.5px;
+        letter-spacing: .6px;
         margin: 0;
         padding: 0;
     }
@@ -261,14 +263,14 @@
     .cityIcon {
         font-size: 10px;
         margin-right: 8px;
-        color: yellow;
+        color: #a0a0a0;
     }
     
     .fecha {
         width: 100%;
-        font-size: 16px;
-        font-weight: 200;
-        color: rgba(256,256,256,.7);
+        font-size: 18px;
+        font-weight: 100;
+        color: rgba(256,256,256,.8);
         word-spacing: inherit;
         letter-spacing: -.5px;
         margin-left: 0px;
@@ -281,7 +283,7 @@
     .fechaIcon {
         font-size: 10px;
         margin-right: 10px;
-        color: yellow;
+        color: #a0a0a0;
     
     }
     
@@ -291,13 +293,16 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        justify-content: start;
-        margin-top: 0px;
+        justify-content: center;
+        margin: 0px;
         padding: 0px;
+        padding-top: 10px;
         overflow-x: hidden;
+        gap: 0;
     } 
 
     .first {
+        height: auto;
         display: flex;
         flex-direction: row-reverse;
         padding: 0;
@@ -309,32 +314,30 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 5.5px;
-        margin-left: 40px;
+        position: inherit;
+        margin-left: 30px;
     }
     
     
     .info1 img {
         position: relative;
-        top: 20px;
+        top: 10px;
     }
     
     .info1 p {
-        font-size: 18px;
+        font-size: 16px;
         text-align: center;
         line-height: 0;
         position: relative;
-        top: -5.5px;
+        top: -10px;
     }
     
     .temperatura {
         width: auto;
-        width: auto;
-        height: auto;
+        height: 150px;
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content: center;
         align-items: start;
         margin: 0;
         margin-left: 20px;
@@ -344,21 +347,20 @@
     .actual {
         font-size: 14px;
         color: #a0a0a0;
-        position: relative;
-        top: 40px;
+        position: inherit;
     }
     
     .temperature {
-        font-size: 80px;
+        font-size: 76px;
+        line-height: 38px;
         font-weight: 100;
         padding: 0;
         margin: 0;
         color: yellow;
-        letter-spacing: -6px;
+        letter-spacing: -4px;
         filter: drop-shadow(0px 0px 10px #000);
         text-align: left;
-        position: relative;
-        top: 24px;
+        position: inherit;
     }
     
     .temperature span {
@@ -370,8 +372,7 @@
     .termica {
         font-size: 15px;
         color: #a0a0a0;
-        position: relative;
-        top: 9px;
+        position: inherit;
     }
     
     .termica span {
@@ -385,27 +386,27 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         gap: 0px;
+        padding: 0;
+        padding-top: 7px;
         margin-left: 0px;
-        position: relative;
-        top: -6px;
+        position: inherit;
     }
     
     .detalles p {
-        color: #cecece;
+        color: #a0a0a0;
         font-size: 16px;
         font-weight: 200;
         text-align: center;
         margin: 0px 10px;
-        margin-top: 30px;
-        padding: 4px 0px;
+        padding: 0;
     }
     
     .deta {
        color: yellow;
        font-size: 16px;
-       font-weight: bolder;
+       font-weight: lighter;
     }
     
   }
