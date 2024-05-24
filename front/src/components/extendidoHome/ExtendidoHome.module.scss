@@ -115,19 +115,28 @@
         display: flex;
         flex-wrap: nowrap;
         overflow-x: scroll;
-        justify-content: space-around;
+        justify-content: start;
         padding: 0;
         padding-top: 30px;
         margin: 0;
     }
+
+    .boxContainer::-webkit-scrollbar {
+        display: none;
+    }
     
     .box {
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
+        width: 160px;
+    }
+    
+    
+    .data {
+        width: 160px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
     }
     
     .box h2 {
@@ -138,22 +147,19 @@
         font-weight: 300;
         text-align: center;
     }
-    
-    .data {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0;
-    }
-    
+
     .data img {
-        width: 80%;
+        width: 90%;
         margin: 0px auto;
+        position: relative;
+        top: -18px;
     }
     
     .dataTemp {
         width: auto;
         padding-top: 0px;
+        position: relative;
+        top: -30px;
     }
     
     .dataTemp p {

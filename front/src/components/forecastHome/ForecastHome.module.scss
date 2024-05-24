@@ -82,17 +82,22 @@
 
 
 @media (max-width: 629px) {
+
+    .container {
+        padding-bottom: 40px;
+    }
     
     .boxContainer {
         width: auto;
         height: auto;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 20px;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: stretch;
+        overflow-x: scroll;
+        padding: 0;
         padding-top: 30px;
         margin: 0;
-        overflow-x: scroll;
     }
 
     .boxContainer::-webkit-scrollbar {
@@ -100,35 +105,40 @@
     }
     
     .box {
-        width: auto;
+        width: 160px;
         height: auto;
         text-align: center;
         padding: 0px;
         margin: 0;
-        margin-right: 25px;
-        border-radius: 6px;
+        margin-right: 0px;
+        border-radius: 0px;
     }
     
     .box h2 {
-        margin: 0;
+        font-size: 17px;
+        color: #fff;
         padding: 0;
-        font-size: 20px;
+        margin: 0;
         font-weight: 300;
+        text-align: center;
     }
     
     .box img {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        padding-bottom: 5px;
+        width: 90%;
+        margin: 0px auto;
+        position: relative;
+        top: -18px;
     }
     
     .box p {
+        width: 160px;
         font-size: 14px;
         margin: 0;
         padding: 0;
         padding-bottom: 10px;
         color: #a0a0a0;
+        position: relative;
+        top: -40px;
     }
     
     .box p span {

@@ -44,7 +44,7 @@ function TempHome({temp}) {
                           <div className={style.temperatura}>
                               <p className={style.actual}>Actual:</p>
                               <p className={style.temperature}>{Number(temp.main.temp.toFixed(1))}°<span>c</span></p>
-                              <p className={style.termica}>Sensacion termica: <span>{temp.main.feels_like}</span>°c</p>   
+                              <p className={style.termica}>Termica: <span>{temp.main.feels_like}</span>°c</p>   
                           </div>
                         </div>
                          <div className={style.detalles}>

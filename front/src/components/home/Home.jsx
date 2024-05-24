@@ -23,8 +23,8 @@ function Home({temp, ext}) {
                             <TempHome temp={temp} />
                         </div>
                         <div className={style.extendido}>
-                            <button onClick={() => cambiarFiltro('dias')}>Proximos días</button>
-                            <button onClick={() => cambiarFiltro('horas')}>Proximas horas</button>
+                            <button onClick={() => cambiarFiltro('dias')}>Por días</button>
+                            <button onClick={() => cambiarFiltro('horas')}>Por horas</button>
                             {filtro === 'dias' ? <ExtendidoHome ext={ext} /> : <ForecastHome forecast={todayForecast}/>}
                         </div>
             </div>    

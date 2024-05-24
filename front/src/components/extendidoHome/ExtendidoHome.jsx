@@ -56,8 +56,8 @@ function ExtendidoHome({ext}) {
                     const fechaFormateada = formatearFecha(day.date);
                     return(
                         <div key={index} className={style.box}>
-                            <h2>{fechaFormateada}</h2>
                             <div className={style.data} >
+                                <h2>{fechaFormateada}</h2>
                                 <img src={iconUrl} alt="Icono del clima" />
                                 <div className={style.dataTemp} >
                                     <p>Max <span>{Number(day.maxTemp).toFixed(0)}°c</span></p>
