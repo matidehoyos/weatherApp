@@ -19,7 +19,7 @@ function ForecastHome({forecast}) {
                                 </div>
                             );
                         })
-                 : <p>Pronostico disponible hasta las 18hs</p>
+                 : <p>Pronóstico disponible hasta las 18hs</p>
                 }
         </div>
     </div>

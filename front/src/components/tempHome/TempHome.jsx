@@ -43,15 +43,15 @@ function TempHome({temp}) {
                           <div className={style.temperatura}>
                               <p className={style.actual}>Actual:</p>
                               <p className={style.temperature}>{Number(temp.main.temp.toFixed(1))}°<span>c</span></p>
-                              <p className={style.termica}>Termica: <span>{temp.main.feels_like}</span>°c</p>   
+                              <p className={style.termica}>Térmica: <span>{temp.main.feels_like}</span>°c</p>   
                           </div>
                         </div>
                          <div className={style.detalles}>
                             <p>Viento: <span className={style.deta}>{Number(temp.wind.speed.toFixed(1))}Km/h</span></p>
-                            <p>Hum: <span className={style.deta}>{temp.main.humidity}%</span></p>
-                            <p>Nub: <span className={style.deta}>{temp.clouds.all}%</span></p>
-                            <p>Visib: <span className={style.deta}>{temp.visibility}m</span></p>
-                            <p>Pres: <span className={style.deta}>{temp.main.pressure}hp</span></p>
+                            <p>Hum.: <span className={style.deta}>{temp.main.humidity}%</span></p>
+                            <p>Nub.: <span className={style.deta}>{temp.clouds.all}%</span></p>
+                            <p>Visib.: <span className={style.deta}>{temp.visibility}m</span></p>
+                            <p>Pres.: <span className={style.deta}>{temp.main.pressure}hp</span></p>
                         </div>
                       </div>
               </div>
