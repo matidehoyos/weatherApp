@@ -239,7 +239,7 @@
 
   @media (max-width: 629px) {
     .container {
-        padding-bottom: 25px;
+        padding-bottom: 0px;
     }
     
     .ubicacion {
@@ -360,7 +360,10 @@
         letter-spacing: -4px;
         filter: drop-shadow(0px 0px 10px #000);
         text-align: left;
-        position: inherit;
+        position: relative;
+        top: 10px;
+        left: -3.5px;
+        
     }
     
     .temperature span {
@@ -384,28 +387,36 @@
         width: auto;
         height: auto;
         display: flex;
+        flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         gap: 0px;
-        padding: 0;
-        padding-top: 7px;
+        padding: 20px;
+        margin: 20px 0px;
         margin-left: 0px;
         position: inherit;
+        overflow-x: scroll;
+        background-color: rgba(255, 255, 0, 0.035);
+    }
+
+    .detalles::-webkit-scrollbar {
+        display: none;
     }
     
     .detalles p {
         color: #a0a0a0;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 200;
-        text-align: center;
-        margin: 0px 10px;
+        text-align: left;
+        margin: 0;
+        margin-right: 10px;
         padding: 0;
     }
     
     .deta {
        color: #fff;
-       font-size: 16px;
+       font-size: 18px;
        font-weight: lighter;
     }
     
