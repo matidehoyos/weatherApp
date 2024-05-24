@@ -3,6 +3,9 @@ import './App.scss'
 import NavBar from './components/navBar/NavBar'
 import Home from './components/home/Home';
 import axios from 'axios';
+import weatherProvider from './provider/weatherProvider';
+axios.defaults.baseURL = 'https://weatherapp-production-2bb8.up.railway.app'
+
 
 function App() {
   const [currentWeather, setCurrent] = useState(null);
@@ -12,10 +15,10 @@ function App() {
   const city = 'buenos aires';
 
   const bringData = async () => {
-    const response = await axios(`https://weatherapp-production-2bb8.up.railway.app/${city}`);
-    setHomeWeather(response.data);
-    const responseExt = await axios(`https://weatherapp-production-2bb8.up.railway.app/extendido/${city}`);
-    setHomeExt(responseExt.data);
+    const response = await weatherProvider.getCurrentWeather(city);
+    setHomeWeather(response);
+    const responseExt = await weatherProvider.getExtendido(city);
+    setHomeExt(responseExt);
   }
 
   useEffect(() => {
