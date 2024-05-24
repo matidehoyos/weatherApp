@@ -71,15 +71,15 @@
         align-items: start;
         padding: 0px;
         margin: 0;
-        background-color: transparent;
+        background-color: rgba($color: #000000, $alpha: .3)
     }
     
     .logo {
         width: 100%;
-        background-color: rgba($color: #000000, $alpha: .3);
-        padding: 8px 0;
+        padding: 0px 10px;
+        margin: 0;
         display: flex;
-        justify-content: center;
+        justify-content: start;
     }
 
     .logo img {
@@ -88,7 +88,7 @@
     }
     
     .logo h2 {
-        margin-left: 8px;
+        margin-left: 4px;
         font-size: 24px;
         font-weight: 500;
         color: yellow;

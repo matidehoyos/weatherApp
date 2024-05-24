@@ -25,7 +25,7 @@ const SearchBar = ({setCurrent, setForecast}) => {
 
   return (
     <div className={style.container}>
-      <label>Buscar ciudad:</label>
+      <label>Busca tu ciudad:</label>
       <div>
         <input type="text" value={city} onChange={handleInputChange} onBlur={handleSearch} placeholder="Ej Londres" />
         <button onClick={handleSearch}><FaSearch /></button>
