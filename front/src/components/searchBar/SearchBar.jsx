@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import style from './SearchBar.module.scss'
 import { FaSearch } from 'react-icons/fa';
-import weatherProvider from '../../provider/weatherProvider';
 
 
 const SearchBar = ({setCurrent, setForecast}) => {
@@ -14,10 +13,10 @@ const SearchBar = ({setCurrent, setForecast}) => {
 
   const handleSearch = async () => {
     try {
-      const currentWeather = await weatherProvider.getCurrentWeather(city);
-      setCurrent(currentWeather);
-      const foreinWeather = await weatherProvider.getExtendido(city);
-      setForecast(foreinWeather)
+      const currentWeather = await axios.get(`https://weatherapp-production-2bb8.up.railway.app/${city}`);
+      setCurrent(currentWeather.data);
+      const foreinWeather = await axios.get(`https://weatherapp-production-2bb8.up.railway.app/extendido/${city}`);
+      setForecast(foreinWeather.data)
     } catch (error) {
       console.error(error);
     }
