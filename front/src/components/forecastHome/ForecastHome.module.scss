@@ -83,13 +83,11 @@
 
 @media (max-width: 629px) {
 
-    .container {
-        padding-bottom: 40px;
-    }
+    
     
     .boxContainer {
         width: auto;
-        height: auto;
+        height: 200px;
         display: flex;
         flex-wrap: nowrap;
         justify-content: start;
@@ -101,9 +99,7 @@
     }
 
     .boxContainer::-webkit-scrollbar {
-       display: block;
-       width: 40px;
-       color: yellow;
+       display: none;
     }
     
     .box {

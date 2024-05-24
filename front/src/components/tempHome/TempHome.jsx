@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import style from './TempHome.module.scss'
 import { FaMapMarkerAlt, FaRegClock } from 'react-icons/fa';
-import ForecastHome from '../forecastHome/ForecastHome';
 
 
 function TempHome({temp}) {

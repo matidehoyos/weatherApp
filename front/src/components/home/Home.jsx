@@ -3,6 +3,7 @@ import style from './Home.module.scss'
 import TempHome from '../tempHome/TempHome';
 import ExtendidoHome from '../extendidoHome/ExtendidoHome';
 import ForecastHome from '../forecastHome/ForecastHome';
+import { FaLongArrowAltRight } from 'react-icons/fa';
 
 function Home({temp, ext}) {
     const [filtro, setFiltro] = useState('dias'); 
@@ -26,6 +27,7 @@ function Home({temp, ext}) {
                             <button onClick={() => cambiarFiltro('dias')}>Por días</button>
                             <button onClick={() => cambiarFiltro('horas')}>Por horas</button>
                             {filtro === 'dias' ? <ExtendidoHome ext={ext} /> : <ForecastHome forecast={todayForecast}/>}
+                            <FaLongArrowAltRight className={style.arrow} />
                         </div>
             </div>    
             : null

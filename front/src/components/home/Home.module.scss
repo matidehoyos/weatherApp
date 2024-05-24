@@ -57,7 +57,7 @@
     
     .extendido {
         width: auto;
-        height: 400px;
+        height: auto;
         margin: 0px 10px;
         padding-top: 25px;
         border-top: 1px solid rgba(256,256,256,.4);
@@ -71,5 +71,11 @@
         margin-right: 20px;
         margin-top: 0;
         border: none;
+    }
+
+    .arrow {
+        width: 100%;
+        color: yellow;
+        font-size: 28px;
     }
 }
