@@ -69,19 +69,28 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
-        padding: 20px;
+        padding: 0px;
+        margin: 0;
         background-color: transparent;
     }
     
+    .logo {
+        width: 100%;
+        background-color: rgba($color: #000000, $alpha: .3);
+        padding: 8px 0;
+        display: flex;
+        justify-content: center;
+    }
+
     .logo img {
-        width: 60px;
+        width: 50px;
         object-fit: scale-down;
     }
     
     .logo h2 {
-        margin-left: 12px;
-        font-size: 22px;
-        font-weight: 600;
+        margin-left: 8px;
+        font-size: 24px;
+        font-weight: 500;
         color: yellow;
     }
     

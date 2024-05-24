@@ -75,41 +75,42 @@
 
     .container {
         width: 100%;
-        flex-direction: column;
+        height: 40px;
         justify-content: start;
+        align-items: center;
         padding: 0;
         margin: 0;
         margin-top: 25px;
     }
     
     .container label {
-        width: 100%;
-        font-size: 18px;
+        width: auto;
+        font-size: 20px;
         font-weight: 400;
         padding-left: 12px;
-        color: rgba(256,256,256,.7);
+        color: rgba(256,256,256,.8);
     }
     
     .container input {
-        width: 200px;
-        height: 30px;
-        font-size: 16px;
+        width: 140px;
+        height: auto;
+        font-size: 20px;
         font-weight: 400;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        margin-top: 13px;
-        margin-left: 6px;
-        padding: 0;
-        background-color: transparent;
+        border-radius: 0;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        margin-left: 8px;
+        padding: 7px;
         color: #fff;
         border: none;
-        border-bottom: 1px solid rgba(256,256,256,.7);
+        border-bottom: 1px solid red;
+        background-color: rgba(256,256,256,.1);
     }
     
     .container input::placeholder {
         font-size: 16px;
         padding: 0px;
-        color: rgba(256,256,256,.6);
+        color: rgba(256,256,256,.5);
     }
     
     .container button {
@@ -118,11 +119,13 @@
         font-size: 16px;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
-        background-color: rgba(256,256,256,.7);
-        color: red;
+        background-color: red;
+        color: #fff;
         cursor: pointer;
         border: none;
-        padding: 7px 12px;
+        padding: 9px;
+        position: relative;
+        top: -.3px;
     }
     
     .container button:hover {
