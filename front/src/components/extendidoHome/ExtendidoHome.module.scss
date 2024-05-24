@@ -122,8 +122,10 @@
     }
 
     .boxContainer::-webkit-scrollbar {
-        display: none;
-    }
+        display: block;
+        width: 40px;
+        color: yellow;
+     }
     
     .box {
         width: 160px;
@@ -149,17 +151,17 @@
     }
 
     .data img {
-        width: 90%;
+        width: 60%;
         margin: 0px auto;
         position: relative;
-        top: -18px;
+        top: -13px;
     }
     
     .dataTemp {
         width: auto;
         padding-top: 0px;
         position: relative;
-        top: -30px;
+        top: -20px;
     }
     
     .dataTemp p {
