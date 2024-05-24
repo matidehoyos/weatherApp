@@ -26,8 +26,10 @@ const SearchBar = ({setCurrent, setForecast}) => {
   return (
     <div className={style.container}>
       <label>Busca el clima en tu ciudad:</label>
-      <input type="text" value={city} onChange={handleInputChange} onBlur={handleSearch} placeholder="Ej. Londres" />
-      <button onClick={handleSearch}><FaSearch /></button>
+      <div>
+        <input type="text" value={city} onChange={handleInputChange} onBlur={handleSearch} placeholder="Ej. Londres" />
+        <button onClick={handleSearch}><FaSearch /></button>
+      </div>
     </div>
   );
 };

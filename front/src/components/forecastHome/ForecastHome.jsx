@@ -15,7 +15,7 @@ function ForecastHome({forecast}) {
                                     <h2>{hour}hs</h2>
                                     <img src={`https://openweathermap.org/img/w/${day.weather[0].icon}.png`} alt="icono" />
                                     <p>Temp: <span>{Number((day.main.temp_max + day.main.temp_max) / 2).toFixed(1)}°C</span></p>
-                                    <p>Nubosidad: <span>{day.clouds.all}%</span></p>
+                                    <p>Nub: <span>{day.clouds.all}%</span></p>
                                 </div>
                             );
                         })
