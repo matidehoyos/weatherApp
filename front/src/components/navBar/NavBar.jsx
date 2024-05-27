@@ -8,7 +8,7 @@ function NavBar({setCurrent, setForecast}) {
 
             <div className={style.logo}>
                 <img src="./sun.png" alt="logo" />
-                <h2>Tu app del clima</h2>
+                <h2>WeatherApp</h2>
             </div>
 
             <div className={style.searchBar}>
